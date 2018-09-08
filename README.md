@@ -1,6 +1,6 @@
 # Events in the window object model
 
-When an event is emitted from somewhere in the window object, an event object is created. Let `event` be such an object. 
+When an event is emitted from somewhere in the window object, an event object is created. Let **`event`** be such an object. 
 
 * **`event.type`** is a string, which is the name of the event. 'click' for example. 
 

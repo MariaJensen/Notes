@@ -10,15 +10,15 @@ Consider now all the ancestors of `event.target`. On top of the hierachy is the 
 
 After the event has been emitted and the event object created, the event object will be propagated among the ancestors of `event.target` in a number of phases: 
 
-**1 Capturing phase:** The event object is propagated through the ancestors of `event.target` in descending order, starting with the window object and ending with the parent of `event.target`. 
+  **Capturing phase:** The event object is propagated through the ancestors of `event.target` in descending order, starting with the window object and ending with the parent of `event.target`. 
 
   At each ancestor all event listeners for `event.type` registered on the ancestor with `capture=true` are executed. 
   
-2. **Target phase:** All event listeners for `event.type` registered on event.target are executed, regardless of if `capture=true` or not. 
+  **Target phase:** All event listeners for `event.type` registered on event.target are executed, regardless of if `capture=true` or not. 
 
 If **`event.bubbles`**`=false`, propagation will end after the target phase. Otherwise the bubbling phase will take place: 
 
-3. **Bubbling phase:** The event object is propagated through the ancestors of `event.target` in ascending order, starting with the parent of `event.target` and ending with the window object. 
+  **Bubbling phase:** The event object is propagated through the ancestors of `event.target` in ascending order, starting with the parent of `event.target` and ending with the window object. 
 
   At each ancestor all event listeners for `event.type` registered on the ancestor with `capture=false` are executed. 
   

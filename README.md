@@ -2,7 +2,7 @@
 
 When an event is emitted from somewhere in the window object, an event object is created. Let `event` be such an object. 
 
-* `event.type` is a string, which is the name of the event. 'click' for example. 
+* **`event.type`** is a string, which is the name of the event. 'click' for example. 
 
 * `event.target` is the EventTarget object on which the event was fired. A button element for example. 
 

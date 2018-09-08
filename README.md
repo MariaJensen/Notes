@@ -13,4 +13,4 @@ After the event has been emitted and the event object created, the event object 
 
 * Capturing phase: The event object is propagated through the ancestors of event.target in descending order, starting with the window object and ending with the parent of event.target. 
 
-[] At each ancestor all eventlisteners for event.type registered on event.target are executed, regardless of if capture=true or not. 
+  At each ancestor all eventlisteners for event.type registered on event.target are executed, regardless of if capture=true or not. 

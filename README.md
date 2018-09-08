@@ -16,28 +16,28 @@ After the event has been emitted and the event object created, the event object 
   
 * **Target phase:** All event listeners for `event.type` registered on event.target are executed, regardless of if `capture=true` or not. 
 
-If `**event.bubbles**=false`, propagation will end after the target phase. Otherwise the bubbling phase will take place: 
+If **`event.bubbles`**`=false`, propagation will end after the target phase. Otherwise the bubbling phase will take place: 
 
 * **Bubbling phase:** The event object is propagated through the ancestors of `event.target` in ascending order, starting with the parent of `event.target` and ending with the window object. 
 
   At each ancestor all event listeners for `event.type` registered on the ancestor with `capture=false` are executed. 
   
-During the propagation `event.eventPhase` holds the phase that is currently taking place, and `event.currentTarget` holds the anscestor whose event listeners are currently being executed. 
+During the propagation **`event.eventPhase`** holds the phase that is currently taking place, and **`event.currentTarget`** holds the anscestor whose event listeners are currently being executed. 
 
-* `event.composedPath()`: todo
+* **`event.composedPath()`**: todo
 
-* `event.stopPropagation()` will wait until all listeners for event.type on the current target in the current phase are done, then cancel further propagation. 
+* **`event.stopPropagation()`** will wait until all listeners for event.type on the current target in the current phase are done, then cancel further propagation. 
 
-* `event.stopImmediatePropagation()` will wait until the current listener for event.type on the current target in the current phase is done, then cancel further propagation. 
+* **`event.stopImmediatePropagation()`** will wait until the current listener for event.type on the current target in the current phase is done, then cancel further propagation. 
 
-* `event.cancelable`: todo
+* **`event.cancelable`**: todo
 
-* `event.preventDefault()`: todo
+* **`event.preventDefault()`**: todo
 
-* `event.defaultPrevented`: todo
+* **`event.defaultPrevented`**: todo
 
-* `event.composed`: todo
+* **`event.composed`**: todo
 
-* `event.isTrusted`: todo
+* **`event.isTrusted`**: todo
 
-* `event.timeStamp`: todo
+* **`event.timeStamp`**: todo

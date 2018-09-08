@@ -24,8 +24,20 @@ If `event.bubbles=false`, propagation will end after the target phase. Otherwise
   
 During the propagation `event.eventPhase` holds the phase that is currently taking place, and `event.currentTarget` holds the anscestor whose event listeners are currently being executed. 
 
-* `event.composedPath()`
+* `event.composedPath()`: todo
 
 * `event.stopPropagation()` will wait until all listeners for event.type on the current target in the current phase are done, then cancel further propagation. 
 
 * `event.stopImmediatePropagation()` will wait until the current listener for event.type on the current target in the current phase is done, then cancel further propagation. 
+
+* `event.cancelable`: todo
+
+* `event.preventDefault()`: todo
+
+* `event.defaultPrevented`: todo
+
+* `event.composed`: todo
+
+* `event.isTrusted`: todo
+
+* `event.timeStamp`: todo
